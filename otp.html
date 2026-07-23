@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify OTP | Nestora</title>
+
+<link rel="stylesheet" href="css/otp.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="otp-page">
+
+<div class="overlay"></div>
+
+<div class="otp-logo">
+<img src="images/logo.png" alt="">
+</div>
+
+<div class="welcome-text">
+<h1>Verify OTP</h1>
+<p>Enter the 6-digit code sent to your mobile</p>
+</div>
+
+<div class="otp-card">
+
+<h2>OTP Verification</h2>
+
+<p>OTP sent to <b>+91 XXXXXXXXXX</b></p>
+
+<div class="otp-box">
+
+<div class="otp-box">
+    <input type="text" maxlength="1" class="otp-input" id="otp1">
+<input type="text" maxlength="1" class="otp-input" id="otp2">
+<input type="text" maxlength="1" class="otp-input" id="otp3">
+<input type="text" maxlength="1" class="otp-input" id="otp4">
+<input type="text" maxlength="1" class="otp-input" id="otp5">
+<input type="text" maxlength="1" class="otp-input" id="otp6">
+</div>
+
+</div>
+
+<div class="timer">
+OTP expires in <span id="countdown">05:00</span>
+</div>
+
+<button class="verify-btn" id="verifyBtn" disabled>
+    Verify OTP
+</button>
+
+<p class="resend">
+Didn't receive OTP?
+<a href="#">Resend OTP</a>
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+let time=300;
+
+let timer=setInterval(function(){
+
+let min=Math.floor(time/60);
+
+let sec=time%60;
+
+document.getElementById("countdown").innerHTML=
+String(min).padStart(2,'0')+":"+
+String(sec).padStart(2,'0');
+
+time--;
+
+if(time<0){
+
+clearInterval(timer);
+
+document.getElementById("countdown").innerHTML="Expired";
+
+}
+
+},1000);
+
+</script>
+<script type="module" src="js/otp.js"></script>
+</body>
+</html>

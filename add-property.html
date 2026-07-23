@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Property | Nestora</title>
+
+<link rel="stylesheet" href="css/add-property.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<a href="index.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>Post Property</h2>
+
+<div></div>
+
+</header>
+
+<section class="hero">
+
+<h1>List Your Property</h1>
+
+<p>Sell or Rent your property in just a few minutes.</p>
+
+</section>
+
+<form class="property-form">
+
+<div class="card">
+
+<h3>Basic Details</h3>
+
+<div class="input-box">
+
+<label>Property Title</label>
+
+<input type="text" id="title" placeholder="Modern 2BHK Flat">
+
+</div>
+
+<div class="input-box">
+    <label>Property Type</label>
+
+    <select id="type">
+        <option value="">Select Property</option>
+        <option value="Room">Room</option>
+        <option value="Flat">Flat</option>
+        <option value="House">House</option>
+        <option value="PG">PG</option>
+        <option value="Shop">Shop</option>
+        <option value="Land">Land</option>
+    </select>
+</div>
+
+<div class="input-box">
+    <label>For</label>
+
+    <select id="purpose">
+        <option value="Rent">Rent</option>
+        <option value="Sale">Sale</option>
+    </select>
+</div>
+
+</div>
+<!-- Location Details -->
+
+<div class="card">
+
+    <h3>Location Details</h3>
+
+    <div class="input-box">
+    <label>State</label>
+    <input type="text" id="state" placeholder="Enter State">
+</div>
+
+    <div class="input-box">
+    <label>City</label>
+    <input type="text" id="city" placeholder="Enter City">
+</div>
+
+    <div class="input-box">
+    <label>Locality / Area</label>
+    <input type="text" id="area" placeholder="Enter Area">
+</div>
+
+    <div class="input-box">
+    <label>Full Address</label>
+    <textarea id="address" placeholder="Enter Full Address"></textarea>
+</div>
+
+</div>
+
+<!-- Property Details -->
+
+<div class="card">
+
+    <h3>Property Details</h3>
+
+    <div class="input-box">
+    <label>Monthly Price (₹)</label>
+    <input type="number" id="price" placeholder="12000">
+</div>
+
+    <div class="input-box">
+    <label>Area (sq.ft)</label>
+    <input type="number" id="sqft" placeholder="1000">
+</div>
+
+    <div class="input-box">
+    <label>Bedrooms</label>
+
+    <select id="bedrooms">
+        <option>1 BHK</option>
+        <option>2 BHK</option>
+        <option>3 BHK</option>
+        <option>4 BHK+</option>
+    </select>
+</div>
+
+<div class="input-box">
+    <label>Bathrooms</label>
+
+    <select id="bathrooms">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4+</option>
+    </select>
+</div>
+
+    <div class="input-box">
+    <label>Parking</label>
+
+    <select id="parking">
+        <option>Available</option>
+        <option>Not Available</option>
+    </select>
+</div>
+
+</div>
+<!-- Property Images -->
+<div class="card">
+
+    <h3>Upload Property Images</h3>
+
+    <div class="upload-box">
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        <p>Select up to 10 Photos</p>
+
+        <input type="file" id="propertyImages" accept="image/*" multiple>
+
+    </div>
+
+    <div id="imagePreview" class="image-preview"></div>
+
+</div>
+
+<!-- Features -->
+
+<div class="card">
+
+    <h3>Property Features</h3>
+
+    <div class="feature-grid">
+
+        <label><input type="checkbox"> WiFi</label>
+
+        <label><input type="checkbox"> AC</label>
+
+        <label><input type="checkbox"> TV</label>
+
+        <label><input type="checkbox"> Balcony</label>
+
+        <label><input type="checkbox"> Parking</label>
+
+        <label><input type="checkbox"> Lift</label>
+
+        <label><input type="checkbox"> Furnished</label>
+
+        <label><input type="checkbox"> Power Backup</label>
+
+    </div>
+
+</div>
+
+<!-- Owner Details -->
+
+<div class="card">
+
+    <h3>Owner Details</h3>
+
+<div class="input-box">
+    <label>Owner Name</label>
+    <input type="text" id="owner" placeholder="Enter Name">
+</div>
+
+    <div class="input-box">
+    <label>Mobile Number</label>
+    <input type="tel" id="mobile" placeholder="9876543210">
+</div>
+
+    <div class="input-box">
+    <label>Description</label>
+    <textarea id="description" placeholder="Write about your property..."></textarea>
+</div>
+
+</div>
+
+<button class="submit-btn">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+    Post Property
+
+</button>
+
+</form>
+<script src="js/add-property.js"></script>
+<script type="module" src="js/add-property.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestora Login</title>
+
+    <link rel="stylesheet" href="css/Login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- Background -->
+
+    <div class="login-overlay"></div>
+
+    <!-- Logo -->
+
+    <div class="login-logo">
+
+        <img src="images/logo.png" alt="Nestora Logo">
+
+    </div>
+
+    <!-- Welcome Text -->
+
+    <div class="welcome-text">
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+            Login to continue <br>
+            your journey
+        </p>
+
+    </div>
+
+    <!-- Login Card -->
+
+    <div class="login-card">
+
+        <h2>Login / Sign Up</h2>
+
+        <p>
+            Enter your mobile number to continue
+        </p>
+                <!-- Mobile Number -->
+
+        <div class="input-box">
+
+            <span class="country-code">+91</span>
+
+            <input
+ id="mobileNumber"
+ type="tel"
+ placeholder="Enter Mobile Number"
+ maxlength="10"
+>
+
+        </div>
+
+        <!-- Send OTP Button -->
+
+        <button class="send-otp-btn" id="sendOTP">
+    Send OTP
+</button>
+
+<div id="recaptcha-container"></div>
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <!-- Google Login -->
+
+        <button class="google-btn">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
+
+            Continue with Google
+
+        </button>
+
+        <!-- Terms -->
+
+        <p class="terms">
+
+            By continuing you agree to our
+            <a href="#">Terms & Conditions</a>
+            and
+            <a href="#">Privacy Policy</a>
+
+        </p>
+
+    </div>
+
+    <!-- Bottom Features -->
+
+    <div class="login-features">
+
+        <div class="feature">
+            ✅ Verified
+        </div>
+
+        <div class="feature">
+            🏠 5000+ Properties
+        </div>
+
+        <div class="feature">
+            📞 Direct Contact
+        </div>
+
+        <div class="feature">
+            💜 Zero Brokerage
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>

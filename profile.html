@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Profile | Nestora</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="profile-page">
+
+    <div class="overlay"></div>
+
+    <div class="profile-logo">
+        <img src="images/logo.png" alt="Nestora Logo">
+    </div>
+
+    <div class="welcome-text">
+        <h1>Welcome to Nestora</h1>
+        <p>Let's complete your profile</p>
+    </div>
+
+    <div class="profile-card">
+
+        <div class="progress">
+            <div class="step active">1</div>
+            <div class="line"></div>
+            <div class="step active">2</div>
+            <div class="line"></div>
+            <div class="step">3</div>
+        </div>
+
+        <h2>Complete Profile</h2>
+
+        <p class="subtitle">
+            Just one step away from exploring thousands of verified properties.
+        </p>
+
+        <form id="profileForm">
+
+            <div class="input-box">
+    <input 
+        id="name" 
+        type="text" 
+        placeholder="Full Name" 
+        required>
+</div>
+
+            <div class="input-box">
+                <input 
+                id="email"
+                type="email" placeholder="Email (Optional)">
+            </div>
+
+            <div class="input-box">
+                <input
+                id="city"
+                type="text" placeholder="City" required>
+            </div>
+
+            <button class="continue-btn" id="saveProfile">
+Continue
+</button>
+
+        </form>
+
+    </div>
+
+</div>
+<script type="module" src="js/profile.js"></script>
+</body>
+</html>
